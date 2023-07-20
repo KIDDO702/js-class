@@ -90,14 +90,75 @@
         // Conditiional Statements (if else if else)
         // Gideon's height
 
-        let height = 6.1;
+        // let height = 6.1;
 
-        if (height < 6) {
-            console.log('Gideon is short');
+        // if (height < 6) {
+        //     console.log('Gideon is short');
+        // } else {
+        //     console.log('Gideon is tall');
+        // }
+
+        // If syntax
+        // if (condition) {
+        //     // Do something
+        // } else {
+        //     // Do something
+        // }
+
+        // Else if syntax
+        // if (condition) {
+            
+        // } else if(condition) {
+            
+        // } else {
+
+        // }
+
+        // If example 
+        // Weather app if cold hot or warm 
+        // const temparatureInput = prompt('Enter the temparature: ');
+
+        // const temparature = parseFloat(temparatureInput);
+        
+        // // Check if the input is a valid number
+        // if (isNaN(temparature)) {
+        //     console.log('Invalid input, Please enter a number for the temparature');
+        // } else {
+        //     // Check the temparature
+        //     if (temparature >= 30) {
+        //         console.log('Its a hot day!');
+        //     } else if (temparature >= 20) {
+        //         console.log('Its a pleasant day!');
+        //     } else if (temparature >= 10) {
+        //         console.log('Its a bit chilly');
+        //     } else {
+        //         console.log('Brrrr, its a cold day');
+        //     }
+        // }
+
+        // age-group-app: Display what age group a person is 
+        const name = prompt('Enter your name: '); 
+        const ageInput = prompt('Enter your age: ');
+
+        const age = parseInt(ageInput); // Converts the ageInput to a whole 
+
+        // Check if the user age is valid 
+        if (isNaN(age)) {
+            console.log('Invalid input, Please enter a valid number for your age');
         } else {
-            console.log('Gideon is tall');
+            // Categorize each age group 
+            if (age < 0) {
+                console.log('Age cannot be negative number, Please enter a valid age');
+            } else if (age < 18) {
+                console.log(`Hello, ${name}!, You are a minor`);
+            } else if (age < 30) {
+                console.log(`Hello, ${name}! Wewe ni yutman msee`);
+            } else if (age < 45) {
+                console.log(`Hello, ${name}! unafaa uwe umeoa`);
+            } else {
+                console.log(`Hello, ${name}! we ni mzee`);
+            }
         }
-
     </script>
 </body>
 </html>
