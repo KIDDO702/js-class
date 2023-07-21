@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket</title>
+</head>
+<body>
+    <script>
+        // Fun event app 3
+        const ageInput = prompt('Enter your age: ');
+        let hasTicket = false;
+
+        const age = parseInt(ageInput);
+
+        if (isNaN(age)) {
+            console.log('Invalid input, please enter a number for your age');
+        } else if ( age < 0 ) {
+            console.log('Age cannot be a negative number ');
+        } else {
+            if (age >= 18 && hasTicket)
+            {
+                console.log('Congratulations, You can enter the event');
+            } else {
+                console.log('You are not eligible to participate');
+            }
+        }
+    </script>
+</body>
+</html>

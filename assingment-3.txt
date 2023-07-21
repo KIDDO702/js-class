@@ -1,0 +1,24 @@
+Assignment 1: Restaurant Reservation Eligibility
+
+You are working on a restaurant reservation system, 
+and you need to determine if a customer is eligible for a reservation based on their preferences and availability. 
+Write a JavaScript program that prompts the user for their preferred time slot (morning or evening) and the number of available seats. 
+The program should check the eligibility of the customer by applying the following conditions:
+
+If the preferred time slot is "morning" and there are at least 3 available seats, the reservation is eligible.
+If the preferred time slot is "evening" and there are at least 5 available seats, the reservation is eligible.
+Otherwise, the reservation is not eligible.
+
+
+Assignment 2: Online Shopping Discount
+
+You are building a web application for an online shopping platform. 
+Write a JavaScript program that prompts the user for their total cart value and their membership status 
+(premium or regular). 
+The program should check if the user is eligible for a discount by applying the following conditions:
+
+If the total cart value is greater than or equal to $100 and the membership status is "premium," the user is eligible for a 20% discount.
+If the total cart value is greater than or equal to $50 and the membership status is "regular," the user is eligible for a 10% discount.
+If the user does not meet any of the above conditions, they are not eligible for a discount.
+
+For each assignment, the program should prompt the user for necessary input and provide an appropriate message indicating whether the user is eligible or not based on the conditions.

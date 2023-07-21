@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 1</title>
+</head>
+<body>
+    <script>
+        // Fun event app
+        // let minimumAge = 18;
+        // let ticketsAvailable = 40;
+        // const age = prompt('Enter your age: ');
+        // const participantAge = parseInt(age);
+
+        // // console.log(age, participantAge);
+
+        // if (isNaN(participantAge) || participantAge > 18) {
+        //     console.log('age has to be a number');
+        // } else {
+        //     if (ticketsAvailable >= 1)
+        //     {
+        //         console.log('There is space for you');
+        //     } else {
+        //         console.log('no more space');
+        //     }
+        // }
+
+        // Fun Event app 2
+        const ageInput = prompt('Hello, Enter your age: ');
+        let hasTicket = true;
+
+        const age = parseInt(ageInput);
+
+        if (!isNaN(age) && age >= 18) {
+            console.log('You are eligible to enter the event');
+        } else {
+            console.log('You are not eligible to enter the event');
+        }
+    </script>
+</body>
+</html>
