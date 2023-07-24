@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation Eligibility</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="bg-secondary-subtle">
+    <nav class="navbar bg-dark">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-white fs-3 fw-semibold text-uppercase">Restaurant Reservation Eligibility</h6>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="card">
+                <div class="card-header shadow-sm px-3 py-2">
+                    <span class="fw-semibold fs-5">Assingment 1: Restaurant Reservation Eligibility</span>
+                </div>
+                <div class="card-body fs-5">
+                    <p>You are working on a restaurant reservation system, and you need to determine if a customer is eligible for a
+                    reservation based on their preferences and availability. Write a JavaScript program that prompts the user for their
+                    preferred time slot (morning or evening) and the number of available seats. The program should check the eligibility of
+                    the customer by applying the following conditions:</p>
+
+                    <ol class="list-group-numbered mt-2">
+                        <li class="list-group-item ">
+                            If the preferred time slot is "morning" and there are at least 3 available seats, the reservation is eligible.
+                        </li>
+                        <li class="list-group-item ">
+                            If the preferred time slot is "evening" and there are at least 5 available seats, the reservation is eligible.
+                        </li>
+                        <li class="list-group-item ">
+                            Otherwise, the reservation is not eligible.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+
+        // Get the timeSlot
+        const timeInput = prompt('Preferred time slot (morning or evening): ').toLowerCase();
+        const timeSlot = timeInput.toLowerCase();
+
+        // Get the available seats 
+        const availableSeatInput = prompt('Number of available seats: ');
+        const availableSeat = parseInt(availableSeatInput);
+
+        // Validate the user
+        if (isNaN(availableSeat)) {
+            console.log('available seats must be a number :(');
+        } else {
+            // Check the availability of the reservation
+            if ((timeSlot === 'morning' && availableSeat >= 3) || (timeSlot === 'evening' && availableSeat >= 5)) {
+                console.log("Congratulations! Your reservation is eligible. See you at the restaurant!");
+            } else {
+                console.log("Sorry, your reservation is not eligible. Please choose a different time or date.");
+            }
+        }
+    </script>
+</body>
+</html>
