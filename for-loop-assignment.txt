@@ -1,0 +1,48 @@
+Assignment: Student Grade Calculator
+
+Imagine you are building a simple School Management System, 
+and one of the essential features is a Student Grade Calculator. 
+In this assignment, students will implement a program that calculates the final grade 
+of a student based on their scores in various subjects.
+
+Requirements:
+
+1. Define an array of objects, where each object represents a subject and contains the following properties:
+    -subjectName: The name of the subject (e.g., "Math", "Science", "English", etc.).
+    -marksObtained: The marks obtained by the student in that subject (out of 100).
+
+2. Implement a function called calculateFinalGrade that takes the array of subjects as input and returns the
+   final grade of the student based on the average marks.
+
+3. Inside the calculateFinalGrade function, use a for loop to iterate through the array of subjects and calculate the average marks of the student.
+
+4. Based on the average marks, assign a final grade to the student according to the following grading scale:
+    -90 or above: "A"
+    -80 to 89: "B"
+    -70 to 79: "C"
+    -60 to 69: "D"
+    -Below 60: "F"
+
+5. The function should return the final grade.
+
+Tips:
+
+-Use a for loop to iterate through the subjects array.
+-Inside the loop, calculate the sum of marks and then divide it by the number of subjects to find the average marks.
+-Based on the average marks, assign the appropriate final grade using conditional statements.
+
+Example: 
+const subjects = [
+    { subjectName: "Math", marksObtained: 85 },
+    { subjectName: "Science", marksObtained: 78 },
+    { subjectName: "English", marksObtained: 92 },
+    { subjectName: "History", marksObtained: 70 },
+    { subjectName: "Art", marksObtained: 60 },
+];
+
+const finalGrade = calculateFinalGrade(subjects);
+console.log(`Final Grade: ${finalGrade}`);
+
+OutPut:
+Final Grade: B
+

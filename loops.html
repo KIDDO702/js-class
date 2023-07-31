@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+
+    <script>
+        // Example-1: Calculate the sum of the first five even numbers (2, 4, 6, 8, 10)
+
+        // let sum = 0;
+        // console.log(sum);
+        // for (let i = 2; i <= 10; i += 2) {
+        //     sum += i;          
+        // }
+        // console.log('The sum of the first five even numbers is: ' + sum);
+
+        // Example-2: Use a for loop to calculate the factorial of a number provided by a user 
+        // const numInput = prompt('Enter a positive number: ');
+        // const num = parseInt(prompt('Enter a positive number: '));
+        // console.log(num);
+        // if (isNaN(num) || num < 0) {
+        //     console.log('Invalid input, Please enter a positive number');
+        // } else
+        // {
+        //     let factorial = 1;
+        //     for (let i = 1; i <= num; i++)
+        //     {
+        //         factorial *= i;
+        //     }
+
+        //     console.log(`The ${num}! = ${factorial}`);
+        // }
+
+        // Example-3: Simple countdown timer 
+
+        const seconds = parseInt(prompt('Enter the number of seconds: '));
+
+        if (isNaN(seconds) || seconds <= 0) {
+            console.log('Invalid input, Enter a positive number for the seconds');
+        } else {
+            console.log('countdown started ...');
+
+            for (let i = seconds; i >= 0; i--)
+            {
+                console.log(i + 'seconds remaining');
+                waitOneSecond();
+            }
+
+            console.log('Time is up');
+
+            function waitOneSecond() {
+                const startTime = Date.now();
+                while (Date.now() - startTime < 1000) {
+                }
+            }
+        }
+    </script>
+</body>
+</html>
